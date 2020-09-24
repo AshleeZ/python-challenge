@@ -3,7 +3,7 @@ import os
 import csv
 
 # Set path for file 
-csvpath = os.path.join("C:\Users\tohap\Desktop\USCbootcamp\python-challenge\PyBank\Resources\budget_data.csv")
+csvpath = os.path.join('.', 'Resources', 'budget_data.csv')
 
 # Open the CSV
 with open(csvpath) as csvfile:
@@ -96,7 +96,7 @@ Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})
     ''')
 
 #Set path for output file 
-output_txt = os.path.join('..', 'Resources', 'budget_analysis.txt')
+output_txt = os.path.join('.', 'analysis', 'budget_analysis.txt')
 
 #Open the output file and print to text file
 with open(output_txt, "w") as text_file:

@@ -3,7 +3,7 @@ import os
 import csv
 
 # Set path for file 
-csvpath = os.path.join('..', 'Resources', 'election_data.csv')
+csvpath = os.path.join('.', 'Resources', 'election_data.csv')
 
 # Open the CSV
 with open(csvpath) as csvfile:
@@ -79,7 +79,7 @@ Winner: {sorted_candidates_list[0]}
 -------------------------''')
 
 #Set path for output file 
-output_txt = os.path.join('..', 'Resources', 'election_analysis.txt')
+output_txt = os.path.join('.', 'analysis', 'election_analysis.txt')
 
 #Open the output file and print to text file
 with open(output_txt, "w") as text_file:
